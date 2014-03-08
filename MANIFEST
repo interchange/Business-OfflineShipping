@@ -1,0 +1,9 @@
+MANIFEST
+Makefile.PL
+lib/Business/OfflineShipping.pm
+lib/Business/OfflineShipping/RoyalMail.pm
+lib/Business/OfflineShipping/USPS.pm
+lib/Business/OfflineShipping/UPS.pm
+META.yml
+META.json
+README
