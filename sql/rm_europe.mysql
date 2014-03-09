@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 5.5.32, for Linux (x86_64)
+--
+-- Host: localhost    Database: nr
+-- ------------------------------------------------------
+-- Server version	5.5.32-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `rm_europe`
+--
+
+DROP TABLE IF EXISTS `rm_europe`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `rm_europe` (
+  `weight` char(6) DEFAULT NULL,
+  `airletterstamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `airletterfrank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `airparcelstamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `airparcelfrank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `surfaceparcel` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  KEY `rm_europe_weight` (`weight`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rm_europe`
+--
+
+LOCK TABLES `rm_europe` WRITE;
+/*!40000 ALTER TABLE `rm_europe` DISABLE KEYS */;
+INSERT INTO `rm_europe` VALUES ('00.01',00.88,00.79,00.00,00.00,00.00),('00.02',00.88,00.79,00.00,00.00,02.60),('00.04',01.28,01.13,00.00,00.00,00.00),('00.06',01.68,01.46,00.00,00.00,02.60),('00.08',02.03,01.68,00.00,00.00,00.00),('00.10',02.38,01.96,03.00,02.50,02.60),('00.25',03.39,03.13,03.50,03.13,03.25),('00.50',00.00,00.00,04.95,00.00,04.85),('00.75',00.00,00.00,06.40,00.00,06.45),('01.00',00.00,00.00,07.85,00.00,08.05),('01.25',00.00,00.00,09.30,00.00,09.65),('01.50',00.00,00.00,10.75,00.00,11.25),('01.75',00.00,00.00,12.20,00.00,00.00),('02.00',00.00,00.00,13.65,00.00,14.45),('00.00',00.60,00.54,00.60,00.54,00.00);
+/*!40000 ALTER TABLE `rm_europe` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-01-14 14:21:53

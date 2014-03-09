@@ -1,0 +1,90 @@
+-- MySQL dump 10.13  Distrib 5.5.32, for Linux (x86_64)
+--
+-- Host: localhost    Database: nr
+-- ------------------------------------------------------
+-- Server version	5.5.32-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `rm_domestic`
+--
+
+DROP TABLE IF EXISTS `rm_domestic`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `rm_domestic` (
+  `weight` decimal(4,2) unsigned zerofill NOT NULL DEFAULT '00.00',
+  `letter1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `letter1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `letter2stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `letter2frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `letterlarge1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `letterlarge1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `letterlarge2stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `letterlarge2frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `parcelsmall1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `parcelsmall2stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `parcelsmall2frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `parcelsmall1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `sd_by1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `sd_by1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedletter1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedletter1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedletter2frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedletter2stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedletterlarge2stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedletterlarge2frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedletterlarge1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedletterlarge1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedparcelsmall1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedparcelsmall1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedparcelsmall2frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedparcelsmall2stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedparcelmed2stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedparcelmed2frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedparcelmed1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `signedparcelmed1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `parcelmed1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `parcelmed2stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `parcelmed2frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `parcelmed1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `sd_by9` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `sd_by9stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `sd_by9frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `sd_sat_by1stamp` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  `sd_sat_by1frank` decimal(4,2) unsigned zerofill DEFAULT '00.00',
+  PRIMARY KEY (`weight`),
+  KEY `weight` (`weight`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rm_domestic`
+--
+
+LOCK TABLES `rm_domestic` WRITE;
+/*!40000 ALTER TABLE `rm_domestic` DISABLE KEYS */;
+INSERT INTO `rm_domestic` VALUES (00.10,00.60,00.00,00.50,00.00,00.90,00.66,00.69,00.53,00.00,00.00,00.00,00.00,06.22,05.65,01.70,00.00,00.00,01.60,01.79,00.00,00.00,02.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,17.64,00.00,10.46,00.00),(00.25,00.00,00.00,00.00,00.00,01.20,00.92,01.10,00.76,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,02.20,00.00,00.00,02.30,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00),(00.50,00.00,00.00,00.00,00.00,01.60,01.24,01.40,01.01,00.00,00.00,00.00,00.00,06.95,06.00,00.00,00.00,00.00,00.00,02.50,00.00,00.00,02.70,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,19.92,00.00,11.34,00.00),(00.75,00.00,00.00,00.00,00.00,02.30,01.76,01.90,01.43,02.36,02.20,01.92,00.00,00.00,00.00,00.00,00.00,00.00,00.00,03.00,00.00,00.00,03.40,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00),(01.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,03.29,02.60,02.54,03.00,08.25,07.10,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,04.10,00.00,00.00,03.70,06.30,00.00,00.00,06.75,05.65,05.20,00.00,00.00,00.00,21.60,00.00,12.90,00.00),(02.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,06.89,05.60,00.00,06.85,11.00,08.90,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,07.95,00.00,00.00,06.70,09.10,00.00,00.00,10.00,08.90,08.00,00.00,00.00,00.00,26.16,00.00,16.20,00.00),(05.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,09.00,00.00,00.00,08.80,25.80,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,14.45,00.00,00.00,16.20,15.10,13.35,00.00,00.00,00.00,00.00,00.00,00.00,00.00),(10.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,18.80,25.80,23.35,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,20.75,00.00,00.00,22.35,21.25,19.65,00.00,00.00,00.00,00.00,00.00,33.96,00.00),(15.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,40.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,28.80,00.00,00.00,33.50,32.40,27.70,00.00,00.00,00.00,00.00,00.00,00.00,00.00),(20.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,21.90,40.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,28.80,00.00,00.00,33.50,32.40,27.70,00.00,00.00,00.00,00.00,00.00,51.00,00.00),(00.00,00.60,00.44,00.50,00.31,00.00,00.00,00.00,00.00,03.07,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00,00.00);
+/*!40000 ALTER TABLE `rm_domestic` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-01-14 14:21:37
